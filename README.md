@@ -24,14 +24,14 @@ To set up this project, follow these steps:
    ```bash
    git clone https://github.com/yourusername/Python_finalProject.git
 
-## Navigate to the project directory:  cd Python_finalProject
-## Install the required dependencies: pip install -r requirements.txt
-##Running Tests: pytest tests/
-## For API tests only: pytest tests/api_tests/
-## For UI tests only: pytest tests/ui_tests/
-## Generating Reports : 
-#### pytest --html=reports/report_api.html tests/api_tests/
-#### pytest --html=reports/report_ui.html tests/ui_tests/
+2. Navigate to the project directory:  cd Python_finalProject
+3. Install the required dependencies: pip install -r requirements.txt
+4. Running Tests: pytest tests/
+5. For API tests only: pytest tests/api_tests/
+6. For UI tests only: pytest tests/ui_tests/
+7. Generating Reports : 
+- **pytest** --html=reports/report_api.html tests/api_tests/
+- **pytest** --html=reports/report_ui.html tests/ui_tests/
 
 ## Logging:
 Logs from the tests are stored in the logs/ directory. Check test.log for detailed test execution logs.
