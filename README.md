@@ -1,20 +1,38 @@
 # Python_finalProject
-# Test Automation Framework
+# Python Final Project
 
-This project implements a Test Automation Framework for both Web UI and API testing. It uses Selenium with Python for UI testing and pytest with requests for API testing.
+This project is designed to conduct both API and UI testing, ensuring that all functionalities meet the expected standards and behaviors. It includes structured tests, logging, and reporting components.
 
-## Installation
+## Project Structure
 
-To set up your local environment to run these tests, follow these steps:
+- **assets/**: Contains static files like CSS for styling reports.
+- **logs/**: Stores log files from test executions.
+- **reports/**: Contains HTML reports generated from tests.
+- **tests/**:
+  - **api_tests/**: Tests related to API functionalities.
+  - **ui_tests/**: Tests related to UI functionalities.
+- **.flake8**: Configurations for flake8.
+- **.pre-commit-config.yaml**: Configurations for pre-commit hooks.
+- **.pylintrc**: Configurations for pylint.
+- **README.md**: Documentation of the project.
+- **requirements.txt**: All necessary Python dependencies.
 
-### Prerequisites
+## Setup
 
-- Python 3.8+
-- pip
+To set up this project, follow these steps:
 
-### Dependencies
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/Python_finalProject.git
 
-Install the required Python packages:
+Navigate to the project directory:  cd Python_finalProject
+Install the required dependencies: pip install -r requirements.txt
+Running Tests: pytest tests/
+For API tests only: pytest tests/api_tests/
+For UI tests only: pytest tests/ui_tests/
+Generating Reports : 
+pytest --html=reports/report_api.html tests/api_tests/
+pytest --html=reports/report_ui.html tests/ui_tests/
 
-```bash
-pip install pytest selenium webdriver-manager requests
+Logging:
+Logs from the tests are stored in the logs/ directory. Check test.log for detailed test execution logs.
